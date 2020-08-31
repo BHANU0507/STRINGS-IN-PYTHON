@@ -1,0 +1,106 @@
+#slice operations:
+bhanu="BHANUPRASAD"
+print(bhanu[:])
+print(bhanu[0:5])
+print(bhanu[4:])
+print("#########################################")
+
+#program to under stand how string is accesed with negative index
+bhanu="THUDI BHANUPRASAD"
+print(bhanu[-7:-3])
+print(bhanu[-1])
+print(bhanu[-2])
+print("########################################")
+
+#program on stride
+bhanu="1234567890"
+prasad="THUDIBHANUPRASAD"
+print(bhanu[::1])
+print(bhanu[::2])
+print(bhanu[::3])
+print(bhanu[0:6:1])
+print(bhanu[0:5:1])
+print("############################################")
+
+#program to understand stide by negative index
+bhanu="0123456789"
+prasad="THUDIBHANUPRASAD"
+print(prasad[::-1])
+print(bhanu[::-1])
+print(bhanu[::-2])
+print(prasad[::-4])
+print("############################################")
+
+#program to understand ord() AND chr() functions:
+ch='b'
+print(ord(ch))
+print(chr(54))
+print(chr(112))
+print(chr(127))
+print(ord('p'))
+print("############################################")
+
+#program on in AND not in operators:
+bhanu="my name is bhanu"
+print('name' in bhanu)
+print('2' not in bhanu)
+print('bhanu' not in bhanu)
+print('2' in bhanu)
+print("#############################################")
+
+
+#comparing strings:
+bhanu="ABCD"
+prasad="abcd"
+print(bhanu==prasad)
+print(bhanu>prasad)
+print(bhanu<prasad)
+print(bhanu>=prasad)
+print(bhanu<=prasad)
+print(bhanu!=prasad)
+"AAb"<="AAc"
+print("#################################################")
+
+#programs on itterating:
+bhanu="my name is bhanuprasad"
+prasad="i love coding"
+listy=[]
+for i in bhanu:
+    listy.append(i.swapcase())    
+print(listy)
+print('='.join(listy))
+print("##############################################")
+
+#programs on patterns:
+
+for i in range(1,int(input("lines??:"))):
+    c='a'
+    print()
+    for j in range(1,i+1):
+        print(c,end='')
+        c=chr(ord(c)+1)
+
+print("###############################################")
+
+b=input("what charecter do you want in ypur pattern")
+for i in range(1,int(input("lines"))):
+               print()
+               a=b
+               for j in range(1,i+1):
+                    print(a,end='-')
+
+print("#####################################################")
+
+#program to split words in a sring
+bhanu=("my name is bhanu")
+print(bhanu.split(' '))
+print("##################################################")
+
+#program to add two strings
+bhanu=("bhanu ,cutie ,kishor ,chethan ,dheeraj ,IT-C ")
+prasad=("student")
+listy=bhanu.split(',')
+listy1=[]
+for i in listy:
+    listy1.append(i+str(prasad))
+print(listy1)
